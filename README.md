@@ -1,6 +1,7 @@
 # container-query
 ### CSS container query polyfill for js
 ### but with additional superpowers
+It uses ResizeObserver to monitor changes
 
 ![demo](preview.gif)
 
