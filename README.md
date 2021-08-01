@@ -13,8 +13,8 @@ It uses ResizeObserver to monitor changes
 import containerQuery from "container-query-js"
 
 containerQuery({
-    600: {
-        ".card": { //when width of elemets is between 0 - 600 these styles will be applies
+    600: { //when width of elemets is between 0 - 600 these styles will be applies
+        ".card": {
             flexDirection: "row"
         }
     },
