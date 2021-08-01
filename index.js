@@ -58,3 +58,5 @@ function resetStyles(el, styles){
         el.style[style] = ""
     }
 }
+
+export default containerQuery
