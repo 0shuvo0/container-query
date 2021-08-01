@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.card{
+    background-color: white;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px #e6e6e6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40vw;
+    position: relative;
+    transition: width 0.1s;
+}
+.card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.content{
+    padding-left: 1em;
+}
+
+
+.card .resizer{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: .9em;
+    border-radius: 50%;
+    background-color: rgb(43, 43, 43);
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.icons i{
+    margin: 0.3em;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgb(4, 113, 255);
+    color: #fff;
+}
+i:nth-child(2){
+    background-color: rgb(233, 5, 5);
+}
+i:nth-child(3){
+    background-color: #000;
+}

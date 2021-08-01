@@ -1,0 +1,22 @@
+{
+  "name": "container-query-js",
+  "version": "1.0.0",
+  "description": "CSS container query polyfill for js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js",
+    "css",
+    "container",
+    "query",
+    "container-query"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/0shuvo0/container-query.git"
+  },
+  "author": "0shuvo0",
+  "license": "ISC"
+}
