@@ -25,7 +25,7 @@ containerQuery({
                 paddingTop: "1em",
                 paddingLeft: 0,
                 margin: "1.5em 0",
-                width: (h, w) => parseInt(w / 2) + "px" // You can also use functions, it will receive height and width on current element
+                width: (h, w) => parseInt(w / 2) + "px" // You can also use functions, it will receive height and width of current element
             }
         },
     }
