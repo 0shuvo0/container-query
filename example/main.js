@@ -1,3 +1,5 @@
+import containerQuery from "../index.js"
+
 containerQuery({
     350: {
         ".card": {

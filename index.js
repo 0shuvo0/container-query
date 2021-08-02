@@ -36,7 +36,12 @@ function observe(query){
 
 function applyStyles(el, styles, rect){
     for(let style in styles){
-        if(typeof styles[style] == "object"){
+        if(style == "rangeOut"){
+            continue
+        }else if(style == "rangeIn"){
+            styles[style](el)
+            continue
+        }else if(typeof styles[style] == "object"){
             Array.from(el.querySelectorAll(style)).map(child => {
                 applyStyles(child, styles[style], rect)
             })
@@ -49,7 +54,12 @@ function applyStyles(el, styles, rect){
 
 function resetStyles(el, styles){
     for(let style in styles){
-        if(typeof styles[style] == "object"){
+        if(style == "rangeOut"){
+            styles[style](el)
+            continue
+        }else if(style == "rangeIn"){
+            continue
+        }else if(typeof styles[style] == "object"){
             Array.from(el.querySelectorAll(style)).map(child => {
                 resetStyles(child, styles[style])
             })
